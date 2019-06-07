@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Survey Form</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!--bootstrap--->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Neuton&display=swap" rel="stylesheet">
+  </head>
+  <body id="main">
+
+    <h1 id="title">Survey Form</h1>
+    <p id="description">What do you think of my project?</p>
+
+    <form id="survey-form" action="index.html" method="post">
+
+      <p id="name" class="left">Name: </p>
+      <input id="name-label" class="right" type="text" name="fullname" placeholder="firstName lastName">
+
+      <p id="email" class="left">Email: </p>
+      <input id="email-label" class="right" type="email" name="email" placeholder="username@email.com">
+
+      <p id="number" class="left">Age: </p>
+      <input id="number-label" class="right" type="number" min="16" max="99" name="age" placeholder="21">
+
+      <p class="left"> Which option best describes your current role: </p>
+
+      <select id="dropdown" class="right">
+        <option value="Student">Student</option>
+        <option value="Full Time Developer">Full Time Developer</option>
+        <option value="Professor">Professor</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <p class="left" class="right">Overall what is your opinion: </p>
+      <div id="opinion" class="right">
+        <input type="radio" name="opinion">Very Good<br>
+        <input type="radio" name="opinion">Good<br>
+        <input type="radio" name="opinion">Average<br>
+        <input type="radio" name="opinion" checked>Poor<br>
+      </div>
+
+      <p class="left">What needs work (if any): </p>
+      <div id="check" class="right">
+        <input type="checkbox" name="work" value="Design">Design<br>
+        <input type="checkbox" name="work" value="Color">Color<br>
+        <input type="checkbox" name="work" value="Layout">Layout<br>
+        <input type="checkbox" name="work" value="other">Other
+        <input type="text" name="work">
+      </div>
+
+      <p class="left">Any Other Criticism?</p>
+      <textarea class="right" name="name" rows="6" cols="80" placeholder="Enter here...."></textarea>
+      <input type="submit" value="Submit" id="submit">
+    </form>
+
+  </body>
+</html>

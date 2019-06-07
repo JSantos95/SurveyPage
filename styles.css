@@ -1,0 +1,47 @@
+#main{
+  text-align: center;
+  background-color: rgb(181, 52, 11);
+  font-family: 'Neuton', serif;
+}
+
+#title{
+  font-size: 50px;
+  font-weight: bold;
+}
+#description{
+  font-size: 17px;
+  background-color: white;
+  padding-top: 10px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#survey-form{
+  font-size: 16px;
+  background-color: white;
+  min-height: 300px;
+  padding: 15px 20px;
+  margin: 0 auto;
+  width: 60%;
+  grid-gap: 10px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(10, auto);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.right{
+  text-align: left;
+}
+.left{
+  text-align: right;
+}
+#name-label, #email-label, #number-label, #dropdown{
+  margin-right: auto;
+}
+
+#submit{
+  grid-column: 1/3;
+  grid-row: 8/10;
+  text-align: center;
+  margin: auto;
+}
